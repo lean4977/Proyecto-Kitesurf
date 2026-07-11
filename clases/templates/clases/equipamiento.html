@@ -1,0 +1,197 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento por Categorías</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .equipo-img { 
+            height: 350px; 
+            width: 100%;
+            object-fit: cover; 
+            border-radius: 15px; 
+        }
+        .carousel-control-prev, .carousel-control-next {
+            width: 10%; 
+            opacity: 0.8;
+        }
+        .carousel-inner {
+            padding-left: 60px !important; 
+            padding-right: 60px !important;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">Nuestro Equipamiento</h1>
+            <p class="lead text-muted">Explora cada categoría de nuestro equipo, seleccionado para tu seguridad y progresión.</p>
+        </div>
+        
+        <div class="mb-5">
+            <h3 class="fw-bold text-primary mb-3 border-bottom pb-2">Kites</h3>
+            <div id="carruselKites" class="carousel slide shadow-lg rounded" data-bs-ride="carousel">
+                <div class="carousel-inner p-4 bg-white rounded">
+                    
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="{% static 'clases/segunda_foto.JPG' %}" class="d-block equipo-img" alt="Kite 7m">
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <h2 class="fw-bold">Kite 7m - Viento Fuerte</h2>
+                                <p class="lead">Ideal para días de viento intenso y riders avanzados que buscan maniobrabilidad.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="{% static 'clases/segunda_foto.JPG' %}" class="d-block equipo-img" alt="Kite 9m">
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <h2 class="fw-bold">Kite 9m - Versátil</h2>
+                                <p class="lead">Nuestro equipo más equilibrado, perfecto para condiciones medias y aprendizaje general.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselKites" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselKites" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="fw-bold text-primary mb-3 border-bottom pb-2">Tablas</h3>
+            <div id="carruselTablas" class="carousel slide shadow-lg rounded" data-bs-ride="carousel">
+                <div class="carousel-inner p-4 bg-white rounded">
+                    
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="{% static 'clases/segunda_foto.JPG' %}" class="d-block equipo-img" alt="Tabla Principiante">
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <h2 class="fw-bold">Tabla Evolutiva (140cm)</h2>
+                                <p class="lead">Diseñada para una fácil progresión, con excelente flotabilidad y agarre para tus primeras navegaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="{% static 'clases/segunda_foto.JPG' %}" class="d-block equipo-img" alt="Tabla Avanzada">
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <h2 class="fw-bold">Tabla Freestyle (135cm)</h2>
+                                <p class="lead">Más ligera y con mayor respuesta, ideal para cuando empiezas a practicar tus primeros saltos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselTablas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselTablas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="fw-bold text-primary mb-3 border-bottom pb-2">Chalecos</h3>
+            <div id="carruselChalecos" class="carousel slide shadow-lg rounded" data-bs-ride="carousel">
+                <div class="carousel-inner p-4 bg-white rounded">
+                    
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="{% static 'clases/segunda_foto.JPG' %}" class="d-block equipo-img" alt="Chaleco de Impacto">
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <h2 class="fw-bold">Chaleco de Impacto</h2>
+                                <p class="lead">Máxima comodidad y protección. Especialmente diseñados para usarse junto con el arnés sin que se suban ni molesten.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="{% static 'clases/segunda_foto.JPG' %}" class="d-block equipo-img" alt="Chaleco de Flotación">
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <h2 class="fw-bold">Chaleco de Alta Flotabilidad</h2>
+                                <p class="lead">Ideal para las primeras clases en el agua. Te mantiene a flote sin esfuerzo para que te concentres en la cometa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselChalecos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselChalecos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="fw-bold text-primary mb-3 border-bottom pb-2">Arneses</h3>
+            <div id="carruselArneses" class="carousel slide shadow-lg rounded" data-bs-ride="carousel">
+                <div class="carousel-inner p-4 bg-white rounded">
+                    
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="{% static 'clases/segunda_foto.JPG' %}" class="d-block equipo-img" alt="Arnés de Asiento">
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <h2 class="fw-bold">Arnés de Asiento</h2>
+                                <p class="lead">Baja el centro de gravedad y no se sube a las costillas. Es la opción más cómoda y segura para aprender desde cero.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="{% static 'clases/segunda_foto.JPG' %}" class="d-block equipo-img" alt="Arnés de Cintura">
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <h2 class="fw-bold">Arnés de Cintura</h2>
+                                <p class="lead">Para riders intermedios y avanzados. Ofrece mayor libertad de movimiento para empezar a navegar en ambas direcciones.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselArneses" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselArneses" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="{% url 'inicio' %}" class="btn btn-dark px-4 py-2">⬅ Volver al Panel</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

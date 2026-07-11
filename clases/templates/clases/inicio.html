@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido | Escuela Kaiser</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body { 
+            background-color: #f0f2f5; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        
+        .hero-panel {
+
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)), 
+                        url("{% static 'clases/imagen_fondo.png' %}");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0; 
+            margin-bottom: -50px; 
+        }
+
+        
+        .dashboard-card {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 10;
+        }
+        
+        .dashboard-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">🌊 ESCUELA KITESURF</a>
+            <span class="text-light">¡Hola, Rider!</span>
+        </div>
+    </nav>
+
+    <header class="hero-panel text-center shadow">
+        <div class="container">
+            <h1 class="display-3 fw-bold tracking-tight mb-3">Bienvenido a Kitesurf</h1>
+            <p class="lead fs-4 opacity-75">Tu panel de entrenamiento y reservas.</p>
+        </div>
+    </header>
+
+    <div class="container position-relative mb-5">
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-md-4">
+                <div class="card h-100 dashboard-card">
+                    <img src="{% static 'clases/segunda_foto.JPG' %}" class="card-img-top" alt="Instructor">
+                    <div class="card-body d-flex flex-column p-4 text-center">
+                        <h4 class="fw-bold mb-3">Tu Instructor</h4>
+                        <p class="text-muted flex-grow-1">Conocé a Diego, su trayectoria en el agua y certificaciones internacionales.</p>
+                        <a href="{% url 'perfil_instructor' %}" class="btn btn-primary w-100 fw-bold py-2 mt-2">Ver Perfil de Diego</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 dashboard-card">
+                    <img src="{% static 'clases/kit_completo.JPG' %}" class="card-img-top" alt="Equipamiento">
+                    <div class="card-body d-flex flex-column p-4 text-center">
+                        <h4 class="fw-bold mb-3">Equipamiento</h4>
+                        <p class="text-muted flex-grow-1">Revisá los materiales, kites, tablas y elementos de seguridad disponibles.</p>
+                        <a href="{% url 'materiales' %}" class="btn btn-dark w-100 fw-bold py-2 mt-2">Ver Materiales</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 dashboard-card overflow-hidden">
+                    <img src="{% static 'clases/cursos_precios.JPG' %}" class="card-img-top" alt="Cursos" style="object-position: 20% 20%; transform: scale(1.0);">
+                    <div class="card-body d-flex flex-column p-4 text-center">
+                        <h4 class="fw-bold mb-3">Cursos y Precios</h4>
+                        <p class="text-muted flex-grow-1">Consultá los niveles, aranceles y reservá tu próxima clase de kitesurf.</p>
+                        <a href="{% url 'cursos_precios' %}" class="btn btn-success w-100 fw-bold py-2 mt-2">Ver Cursos</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

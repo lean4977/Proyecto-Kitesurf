@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Reserva en Proceso! - Escuela Kaiser</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex align-items-center py-5" style="min-height: 100vh;">
+
+    <div class="container text-center">
+        <div class="card shadow p-5 mx-auto border-0" style="max-width: 650px; border-radius: 15px;">
+            
+            
+            <div class="mb-3">
+                <span style="font-size: 4rem;">🪁</span>
+            </div>
+
+            <h1 class="text-success fw-bold mb-3">¡Tu turno está pre-reservado!</h1>
+            <p class="lead text-dark mb-4">
+                Ya registramos tu interés. Como sabés, en el kitesurf dependemos 100% del viento y las condiciones climáticas del spot.
+            </p>
+            
+            
+            <div class="alert alert-light border p-4 mb-4 text-start shadow-sm" style="border-radius: 10px; background-color: #f8f9fa;">
+                <h5 class="fw-bold text-primary mb-2">📌 Último paso para confirmar:</h5>
+                <p class="mb-0 text-muted">
+                    Escribile ahora a <strong>Diego</strong> por WhatsApp para chequear el pronóstico de viento de esta semana y coordinar el día y horario exacto de tu clase.
+                </p>
+            </div>
+
+            
+            <div class="d-grid gap-2 col-md-10 mx-auto mb-4">
+                <a href="https://wa.me/5491141968260?text=¡Hola%20Diego!%20Acabo%20de%20reservar%20mi%20clase%20en%20la%20web.%20Quisiera%20coordinar%20el%20día,%20horario%20y%20ver%20el%20pronóstico%20del%20viento%20🤙" 
+                   target="_blank" 
+                   class="btn btn-success btn-lg fw-bold py-3 shadow-sm d-flex align-items-center justify-content-center gap-2"
+                   style="border-radius: 10px; font-size: 1.2rem;">
+                   <span>💬</span> Hablar con Diego por WhatsApp
+                </a>
+            </div>
+
+            <hr class="my-4 text-muted">
+
+            <div class="d-flex justify-content-center gap-2 flex-wrap">
+                <a href="{% url 'materiales' %}" class="btn btn-outline-secondary btn-sm px-3 py-2">🏄‍♂️ Ver Equipamiento</a>
+                <a href="{% url 'inicio' %}" class="btn btn-outline-primary btn-sm px-3 py-2">⬅ Volver al Panel</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

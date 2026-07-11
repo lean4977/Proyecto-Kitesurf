@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Registro | Escuela Kaiser</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex align-items-center" style="min-height: 100vh;">
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card-body p-5">
+                        <h2 class="text-center fw-bold mb-4">Crear una Cuenta</h2>
+                        <p class="text-center text-muted mb-4">Unite a nuestra escuela y reservá tus clases de Kitesurf.</p>
+                        
+                        <form method="post" class="needs-validation">
+                            {% csrf_token %}
+                            
+                            {% for field in form %}
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold">{{ field.label }}</label>
+                                    {{ field }}
+                                    {% if field.errors %}
+                                        <div class="text-danger small mt-1">
+                                            {{ field.errors|striptags }}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                            
+                            <button type="submit" class="btn btn-success w-100 fw-bold py-2 mt-4">Registrarme y Ver Cursos</button>
+                        </form>
+                        
+                        <div class="text-center mt-4 pt-3 border-top">
+                            <p class="mb-1">¿Ya tenés una cuenta?</p>
+                            <a href="{% url 'login' %}" class="btn btn-outline-primary btn-sm px-4">Iniciar Sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
