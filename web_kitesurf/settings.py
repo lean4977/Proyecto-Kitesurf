@@ -19,7 +19,9 @@ SECRET_KEY = 'django-insecure-sa_$s8z3yhbbkx_blq+9_-s07@nld1gi7gm-mir$=8!)!*pqb4
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*'] 
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 
