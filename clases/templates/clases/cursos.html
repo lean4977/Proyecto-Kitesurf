@@ -11,11 +11,12 @@
 
     <div class="container py-5">
         <div class="text-center mb-5">
-            <h1 class="fw-bold">Nuestros Cursos</h1>
-            <p class="lead text-muted">Elegí el nivel que mejor se adapte a vos y reservá tu turno.</p>
+            <h1 class="fw-bold">Nuestros Cursos de Kitesurf</h1>
+            <p class="lead text-muted">Desde tus primeros pasos en la arena hasta tus primeros saltos en el agua. Encontrá tu plan ideal.</p>
         </div>
 
         <div class="row text-center">
+            
             
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm h-100">
@@ -23,33 +24,39 @@
                         <h4 class="my-0 fw-normal">Principiante</h4>
                     </div>
                     <div class="card-body d-flex flex-column">
-                        <h1 class="card-title pricing-card-title">$45.000<small class="text-muted fw-light">/clase</small></h1>
+                        <h1 class="card-title pricing-card-title">$45.000<small class="text-muted fw-light">/hora</small></h1>
+                        <p class="text-muted small mt-3 px-2"><em>El primer paso indispensable para adentrarte en el mundo del kitesurf. Un módulo diseñado para que adquieras total confianza, priorizando la seguridad, el entendimiento del entorno y el dominio del viento antes de ingresar al agua.</em></p>
                         <ul class="list-unstyled mt-3 mb-4 text-start px-3">
-                            <li>✔️ Teoría del viento y seguridad</li>
-                            <li>✔️ Armado del equipo</li>
-                            <li>✔️ Vuelo del kite en la arena</li>
+                            <li class="mb-2">🪁 <strong>Teoría aplicada:</strong> Análisis de la ventana de viento y condiciones meteorológicas.</li>
+                            <li class="mb-2">🪁 <strong>Protocolos de seguridad:</strong> Reconocimiento y activación de los sistemas de escape.</li>
+                            <li class="mb-2">🪁 <strong>Set-up del equipo:</strong> Ensamblaje, calibración y cuidados del material.</li>
+                            <li class="mb-2">🪁 <strong>Pilotaje en tierra:</strong> Técnicas de despegue, aterrizaje y control absoluto del kite.</li>
                         </ul>
                         <a href="{% url 'reservar' %}" class="btn btn-lg btn-outline-primary mt-auto">Reservar Turno</a>
                     </div>
                 </div>
             </div>
 
+            
             <div class="col-md-4 mb-4">
                 <div class="card shadow h-100 border-primary">
                     <div class="card-header bg-primary text-white py-3">
                         <h4 class="my-0 fw-normal">Waterstart (En el agua)</h4>
                     </div>
                     <div class="card-body d-flex flex-column">
-                        <h1 class="card-title pricing-card-title">$55.000<small class="text-muted fw-light">/clase</small></h1>
+                        <h1 class="card-title pricing-card-title">$55.000<small class="text-muted fw-light">/hora</small></h1>
+                        <p class="text-muted small mt-3 px-2"><em>Llegó el momento de la acción. Este nivel se enfoca en tu adaptación al medio acuático, enseñándote a generar tracción controlada y a coordinar el kite con la tabla para lograr tu primera salida.</em></p>
                         <ul class="list-unstyled mt-3 mb-4 text-start px-3">
-                            <li>✔️ Body drag (tracción en el agua)</li>
-                            <li>✔️ Posición de la tabla</li>
-                            <li>✔️ Primeros metros navegando</li>
+                            <li class="mb-2">🌊 <strong>Body Drag:</strong> Técnicas de desplazamiento guiado y recuperación de tabla.</li>
+                            <li class="mb-2">🌊 <strong>Gestión de potencia:</strong> Sincronización del movimiento del kite para generar impulso.</li>
+                            <li class="mb-2">🌊 <strong>Técnica de salida:</strong> Posicionamiento biomecánico correcto del cuerpo y la tabla.</li>
+                            <li class="mb-2">🌊 <strong>Deslizamiento:</strong> Consolidación de postura para tus primeros metros navegando.</li>
                         </ul>
                         <a href="{% url 'reservar' %}" class="btn btn-lg btn-primary mt-auto">Reservar Turno</a>
                     </div>
                 </div>
             </div>
+            
             
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm h-100">
@@ -57,11 +64,13 @@
                         <h4 class="my-0 fw-normal">Avanzado / Saltos</h4>
                     </div>
                     <div class="card-body d-flex flex-column">
-                        <h1 class="card-title pricing-card-title">$60.000<small class="text-muted fw-light">/clase</small></h1>
+                        <h1 class="card-title pricing-card-title">$60.000<small class="text-muted fw-light">/hora</small></h1>
+                        <p class="text-muted small mt-3 px-2"><em>Llevá tu navegación al siguiente nivel. Orientado a riders independientes que buscan optimizar su rendimiento, lograr fluidez en cada movimiento y dar sus primeros pasos en el freestyle.</em></p>
                         <ul class="list-unstyled mt-3 mb-4 text-start px-3">
-                            <li>✔️ Navegación upwind (ceñir)</li>
-                            <li>✔️ Transiciones fluidas</li>
-                            <li>✔️ Técnicas de primer salto</li>
+                            <li class="mb-2">🚀 <strong>Eficiencia en ceñida:</strong> Corrección postural para navegar contra el viento sin derivar.</li>
+                            <li class="mb-2">🚀 <strong>Transiciones dinámicas:</strong> Cambios de dirección fluidos manteniendo la velocidad.</li>
+                            <li class="mb-2">🚀 <strong>Técnica de Pop:</strong> Uso correcto del borde de la tabla para generar tensión y despegue.</li>
+                            <li class="mb-2">🚀 <strong>Iniciación al Freestyle:</strong> Control del kite en el aire para tus primeros saltos.</li>
                         </ul>
                         <a href="{% url 'reservar' %}" class="btn btn-lg btn-outline-dark mt-auto">Reservar Turno</a>
                     </div>
@@ -76,4 +85,4 @@
     </div>
 
 </body>
-</html
+</html>
