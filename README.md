@@ -15,3 +15,10 @@ Python & Django (la base de todo).
 HTML5 & CSS3 (para que todo se vea bien).
 SQLite (base de datos para el desarrollo). 
 
+## Comandos útiles para correr el proyecto localmente
+
+Una vez clonado el repositorio, asegúrate de tener tu entorno virtual activado y ejecuta los siguientes comandos:
+
+1. Instalar las dependencias:
+   ```bash
+   pip install -r requirements.txt
