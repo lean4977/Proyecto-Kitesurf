@@ -6,7 +6,7 @@ Para cumplir con el **objetivo rubricado de Coderhouse**, se integró un **Blog 
 
 ## 🌐 URL Pública (Despliegue)
 La aplicación se encuentra desplegada y funcionando en Render.
-**Link de producción:** `[https://proyecto-kitesurf.onrender.com/]`
+**Link de producción:** https://proyecto-kitesurf.onrender.com/
 
 ---
 
@@ -16,6 +16,6 @@ Para probar el proyecto de forma local, sigue estos pasos:
 
 1. **Clonar el repositorio y crear entorno virtual:**
    ```bash
-   git clone <tu-repositorio>
+   git clone [https://github.com/lean4977/Proyecto-Kitesurf.git]
    python -m venv venv
-   source venv/Scripts/activate  
+   source venv/Scripts/activate
