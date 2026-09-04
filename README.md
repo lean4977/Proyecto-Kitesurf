@@ -16,6 +16,6 @@ Para probar el proyecto de forma local, sigue estos pasos:
 
 1. **Clonar el repositorio y crear entorno virtual:**
    ```bash
-   git clone [https://github.com/lean4977/Proyecto-Kitesurf.git]
+   git clone https://github.com/lean4977/Proyecto-Kitesurf.git
    python -m venv venv
    source venv/Scripts/activate
