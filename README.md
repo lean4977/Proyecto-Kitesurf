@@ -1,24 +1,21 @@
-🪁 Proyecto Final: Gestión para Escuela de Kitesurf
-¡Hola! Soy Leandro, y este es mi proyecto final para el curso de Python en Coderhouse.
+# 🏄‍♂️ Proyecto Web Kitesurf & Blog de Novedades
 
-El objetivo de esta web es simple: ayudar a una escuela de kitesurf a gestionar sus cursos y alumnos de forma ordenada, dejando atrás el caos de los anotadores manuales. 
-Es una solución pensada para que tanto los administradores como los alumnos tengan una experiencia fluida y profesional. 
+## 📝 Descripción y Adaptación del Dominio
+Este proyecto presenta una aplicación web completa para la gestión de una Escuela de Kitesurf (registro de alumnos, panel de usuario, instructores y pre-reservas). 
+Para cumplir con el **objetivo rubricado de Coderhouse**, se integró un **Blog de Novedades** dentro de la plataforma, permitiendo a los usuarios registrados compartir experiencias, tips de viento y noticias, cumpliendo al 100% con el circuito de publicaciones solicitado.
 
-He desarrollado esta plataforma enfocándome en la funcionalidad y la facilidad de uso:
-Panel de Administración: El corazón de la web. Desde acá gestiono los cursos disponibles y superviso los usuarios registrados.
-Registro y Acceso: Los alumnos pueden crearse una cuenta rápidamente para empezar a interactuar con la plataforma.
-Gestión de Reservas: El núcleo del negocio. Permite a los usuarios elegir sus cursos y asegurar su lugar de forma sencilla.
-Diseño Responsivo: Pensé la web para que se vea bien tanto en una computadora como en el celular, que es donde suelen estar los alumnos cuando buscan información. 
+## 🌐 URL Pública (Despliegue)
+La aplicación se encuentra desplegada y funcionando en Render.
+**Link de producción:** `[https://proyecto-kitesurf.onrender.com/]`
 
-🛠️ Tecnologías utilizadas
-Python & Django (la base de todo).
-HTML5 & CSS3 (para que todo se vea bien).
-SQLite (base de datos para el desarrollo). 
+---
 
-## Comandos útiles para correr el proyecto localmente
+## ⚙️ Configuración y Arranque Local
 
-Una vez clonado el repositorio, asegúrate de tener tu entorno virtual activado y ejecuta los siguientes comandos:
+Para probar el proyecto de forma local, sigue estos pasos:
 
-1. Instalar las dependencias:
+1. **Clonar el repositorio y crear entorno virtual:**
    ```bash
-   pip install -r requirements.txt
+   git clone <tu-repositorio>
+   python -m venv venv
+   source venv/Scripts/activate  
